@@ -11,7 +11,11 @@ window.onload = function() {
   var adj = ["great", "big"];
   var noun = ["jogger", "racoon"];
 
-  pronoun.forEach(pronoun => {
-    adj.forEach(adj => {});
+  pronoun.forEach(pronounElement => {
+    adj.forEach(adjElement => {
+      noun.forEach(nounElement => {
+        console.log(pronounElement + adjElement + nounElement + ".com");
+      });
+    });
   });
 };
